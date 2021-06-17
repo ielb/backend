@@ -56,7 +56,7 @@ class User extends Authenticatable
     // public function pushNotification($token,$message,$body){
     //     try{
 
-    //     $server_key = "AAAAA9mVhf8:APA91bFmcU82cncG6x9GpDPygTJ1J9LC7L9rIZwUY7UshV3PjRRwxw-H8FnoxqWo5cDKsxzuCwzS9ybvJBDXvOpYEwG6biT8oIVMLxEnFuXuIWJlsQg0yCdmm07IGBAkYxqSFlDUn9u-";
+    //     $server_key = "";
 	// 	if($token == null) return;
     //     $data = [
     //     "to"=> $token,
