@@ -16,6 +16,7 @@ class CreateMessageTable extends Migration
         Schema::create('message', function (Blueprint $table) {
             $table->bigIncrements('id');
 			$table->text('body');
+            $table->boolean('isImage');
 			$table->boolean('read');
 			$table->integer('user_id');
 			$table->integer('chat_room_id');
