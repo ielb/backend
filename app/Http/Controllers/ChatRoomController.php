@@ -59,10 +59,10 @@ class ChatRoomController extends Controller
     }
     function makeChatRoomAsReaded(Request $request){
 		$request->validate([
-			'chat_room_id'=>'required',
+			'conversation_id'=>'required',
 		]);
 
-		$chatRoom = ChatRoom::findOrFail($request['chat_room_id']);
+		$chatRoom = ChatRoom::findOrFail($request['conversation_id']);
 
 		foreach ($chatRoom->messages as $message) {
 			$message->update(['read'=>true]);

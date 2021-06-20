@@ -46,7 +46,7 @@ class MessageController extends Controller
         $message->body = $request['body'];
         $message->read = 0;
         $message->user_id = auth()->id();
-        $message->chat_room_id =  (int)$request['chat_room_id'];
+        $message->chat_room_id =  (int)$request['conversation_id'];
         $user = User::find((int)$request['to']);
         $me =  User::find(auth()->user()->id);
         $message->saveOrFail();
