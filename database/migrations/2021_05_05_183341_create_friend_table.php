@@ -13,7 +13,7 @@ class CreateFriendTable extends Migration
      */
     public function up()
     {
-        Schema::create('friend', function (Blueprint $table) {
+        Schema::create('friends', function (Blueprint $table) {
             $table->id();
             $table->integer('userID');
             $table->integer('secondUserID');

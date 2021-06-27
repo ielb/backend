@@ -23,7 +23,6 @@ Route::post('/login',[ApiAuthController::class,'login']);
 Route::post('/register',[UserController::class,'register']);
 
 Route::middleware('auth:api')->group(function ()  {
-
     Route::post('/user/photo',[PhotoController::class,'store']);
     Route::post('/fcm',[UserController::class, 'fcmToken']);
     Route::post('/user/update/email',[UserController::class, 'updateEmail']);

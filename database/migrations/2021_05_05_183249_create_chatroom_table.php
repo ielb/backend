@@ -13,7 +13,7 @@ class CreateChatroomTable extends Migration
      */
     public function up()
     {
-        Schema::create('chatroom', function (Blueprint $table) {
+        Schema::create('chat_rooms', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('userID');
             $table->integer('secondUserID');

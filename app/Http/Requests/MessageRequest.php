@@ -25,7 +25,7 @@ class MessageRequest extends FormRequest
     {
         return [
             'body'=>'required',
-            'chat_room_id' => 'required',
+            'conversation_id' => 'required',
             'to' => 'required'
         ];
     }

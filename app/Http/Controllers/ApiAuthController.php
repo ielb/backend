@@ -17,7 +17,7 @@ class ApiAuthController extends Controller
 				'form_params' => [
 					'grant_type' => 'password',
 					'client_id' => '2',
-					'client_secret' => '6OUai7oVbAWZgkFQ3ApSKvJc06sZ9m4uJLPJ2di5',
+					'client_secret' => 'GO0gL4L121OWXfoxMuV0uqoCEhYh0xPKtRUU3Tof',
 					'username' => $request->email,
 					'password' => $request->password,
 					'scope' => '*',

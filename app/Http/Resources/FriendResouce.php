@@ -16,6 +16,7 @@ class FriendResouce extends JsonResource
     public function toArray($request)
     {
         $data['id'] = $this->id;
+        $data['fullName'] =$this->id;
         $data['userID'] = auth()->user()->id != $this->userID ? new UserResource(User::find($this->userID)) :  new UserResource(User::find($this->secondUserID)) ;
         $data['created_at'] = $this->created_at;
         return $data;
