@@ -26,7 +26,8 @@ class MessageRequest extends FormRequest
         return [
             'body'=>'required',
             'conversation_id' => 'required',
-            'to' => 'required'
+            'to' => 'required',
+            'isImage'=>'required'
         ];
     }
 }

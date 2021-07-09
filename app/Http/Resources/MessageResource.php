@@ -17,6 +17,7 @@ class MessageResource extends JsonResource
         $data['id'] =$this->id;
         $data['body'] = $this->body;
 		$data['read'] = $this->read;
+        $data['isImage'] = $this->isImage;
 		$data['user_id'] = $this->user_id;
 		$data['chat_room_id'] = $this->chat_room_id;
         $data['created_at'] = $this->created_at;

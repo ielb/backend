@@ -10,7 +10,7 @@ use App\Models\ChatRoom;
 class Message extends Model
 {
     use HasFactory;
-    protected $fillable = ['body','user_id','id','read','isFile'];
+    protected $fillable = ['body','user_id','id','read','isImage'];
 
 	public function chatRoom(){
 

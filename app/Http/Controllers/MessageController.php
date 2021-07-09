@@ -45,10 +45,9 @@ class MessageController extends Controller
         $message = new Message();
         $message->body = $request['body'];
         $message->read = 0;
+        $message->isImage = (int)$request['isImage'];
         $message->user_id = auth()->id();
         $message->chat_room_id =  (int)$request['conversation_id'];
-        $user = User::find((int)$request['to']);
-        $me =  User::find(auth()->user()->id);
         $message->saveOrFail();
         // if($me->fcm_token == null){
         //     return new MessageResource($message);
